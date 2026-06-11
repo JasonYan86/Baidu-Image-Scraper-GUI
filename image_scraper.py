@@ -322,7 +322,7 @@ class ImageScraperApp:
         form.pack(fill=tk.X)
 
         tk.Label(form, text="搜索关键字：").grid(row=0, column=0, sticky=tk.W, pady=4)
-        self.keyword_var = tk.StringVar(value="微信头像")
+        self.keyword_var = tk.StringVar(value="高清壁纸")
         tk.Entry(form, textvariable=self.keyword_var, width=40).grid(row=0, column=1, columnspan=5, sticky=tk.EW, pady=4)
 
         tk.Label(form, text="下载数量：").grid(row=1, column=0, sticky=tk.W, pady=4)
