@@ -1,0 +1,32 @@
+# 屏蔽 Cocos 引擎默认的构建和临时目录
+library/
+local/
+build/
+build-templates/
+profiles/
+settings/
+temp/
+
+
+# 屏蔽所有 Cocos 生成的 meta 文件（极其干扰 AI 视线）
+**/*.meta
+
+# 屏蔽场景和预制体（AI 读不懂这些巨型的节点树配置，交由人类中间人处理）
+**/*.fire
+**/*.prefab
+
+# 屏蔽材质、特效、动画和图集配置文件
+**/*.mtl
+**/*.effect
+**/*.anim
+**/*.pac
+**/*.plist
+
+# 屏蔽所有美术和多媒体资源
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.mp3
+
+# 屏蔽归档和废弃测试内容（基于你的 assets/_Archive/ 结构）
+assets/_Archive/**
