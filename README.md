@@ -1,4 +1,4 @@
-# 百度图片抓取工具
+# 网络图片抓取工具
 
 一款面向日常使用的**通用图片下载桌面工具**。基于 Python + Tkinter 构建图形界面，支持关键字搜索、智能尺寸选择、多种防变形保存模式、断点续传与 MD5 去重，并可一键打包为 Windows 独立 exe。
 
@@ -27,7 +27,7 @@
 ### 稳定可靠的抓取体验
 
 - **多线程下载**：抓取在后台线程执行，GUI 界面不卡顿
-- **断点续传**：按关键字记录百度 API 的 `pn` 页码，下次从上次位置继续
+- **断点续传**：按关键字记录网络 API 的 `pn` 页码，下次从上次位置继续
 - **MD5 去重**：以 URL 哈希命名文件，已存在则自动跳过，防止覆盖
 - **代理兼容**：自动绕过失效的系统代理，直连更稳定
 
@@ -120,7 +120,7 @@ pip install pyinstaller
 单文件、无黑窗口打包命令：
 
 ```bash
-pyinstaller --onefile --windowed --name "百度图片抓取工具" --add-data "assets;assets" --hidden-import=PIL._imaging --collect-all certifi --collect-all PIL image_scraper.py
+pyinstaller --onefile --windowed --name "网络图片抓取工具" --add-data "assets;assets" --hidden-import=PIL._imaging --collect-all certifi --collect-all PIL image_scraper.py
 ```
 
 生成的 exe 位于 `dist/` 目录。若已有 `ImageScraper.spec` 且已配置 `assets`，也可：
